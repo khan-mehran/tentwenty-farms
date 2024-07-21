@@ -18,7 +18,6 @@
 .next
 /next-env.d.ts
 /out/
-/public/images/*
 !.env.local
 
 # logs
