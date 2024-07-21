@@ -1,0 +1,88 @@
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes splitScreen {
+  0% {
+    clip-path: inset(50% 0 0 0);
+  }
+  50% {
+    clip-path: inset(50% 0 50% 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.titleAnimation {
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+.splitScreen {
+  position: relative;
+  overflow: hidden;
+  animation: splitScreen 1.5s ease-in-out forwards;
+}
+
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animateRotate {
+  animation: rotate 3s linear infinite;
+}
+
+.smallSquare {
+  position: absolute;
+  width: 138px;
+  height: 138px;
+  border: 1px solid #EEF4F9;
+  opacity: 0.3;
+  padding: 20px;
+  
+}
+
+.squareBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 8px solid transparent;
+  border-left-color: #EEF4F9;
+  box-sizing: border-box;
+}
+
+.slideNumberContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin: 35px 0 0 20px;
+}
+
+.slideNumber {
+  font-size: 16px;
+  font-weight: 400;
+  color: #EEF4F9;
+}
+
+.slideLine {
+  border: 1px solid #EEF4F9;
+  width: 103px;
+  margin: 0 8px;
+}
